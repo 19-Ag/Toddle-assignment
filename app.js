@@ -14,7 +14,18 @@ app.use('/auth', require('./routes/auth.routes'));
 app.use('/journals', require('./routes/journal.routes'));
 app.use('/notifications', require('./routes/notification.routes'));
 app.get('/', (req, res) => {
-  res.send("<h1>JOURNAL APP IS RUNNING ...IMPORT POSTMAN COLLECTION TO CHECK API ON POSTMAN!! </h1>")});
+  res.send(`
+    <h1>📓 Journal App is Running</h1>
+    <p>Welcome to the Journal App API!</p>
+    <p><strong>To test the API endpoints:</strong></p>
+    <ul>
+      <li>Import the Postman collection</li>
+      <li>Use the listed routes to register, login, manage journals, view feeds, and handle notifications</li>
+    </ul>
+    <p>Happy coding! 🚀</p>
+  `);
+});
+
 // Error handler (should be last)
 app.use(errorHandler);
 
