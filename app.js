@@ -14,8 +14,7 @@ app.use('/auth', require('./routes/auth.routes'));
 app.use('/journals', require('./routes/journal.routes'));
 app.use('/notifications', require('./routes/notification.routes'));
 app.get('/', (req, res) => {
-  res.send("Auth POST {{baseUrl}}/auth/register - Register Teacher/Student <br> POST {{baseUrl}}/auth/login - Login Teacher/Student<br>Journal (Teacher Only):<br>POST {{baseUrl}}/journals - Create Journal<br> PUT {{baseUrl}}/journals/1 - Update Journal<br>DELETE {{baseUrl}}/journals/1 - Delete Journal<br>POST {{baseUrl}}/journals/1/publish - Publish Journal<br>Feed:<br>GET {{baseUrl}}/journals/feed - Teacher Feed<br>GET {{baseUrl}}/journals/feed - Student Feed<br>Notifications:<br>GET {{baseUrl}}/notifications - List Notifications (Student)<br>POST {{baseUrl}}/notifications/1/read - Mark Notification as Read (Student)<br>POST {{baseUrl}}/notifications - Create Notification (Teacher)); "
-)});
+  res.send("<h1>JOURNAL APP IS RUNNING ...IMPORT POSTMAN COLLECTION TO CHECK API ON POSTMAN!! </h1>")});
 // Error handler (should be last)
 app.use(errorHandler);
 
